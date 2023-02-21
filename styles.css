@@ -111,3 +111,39 @@ nav ul li.active {
     margin: 3px;
   }
 }
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background-image: url(//unsplash.it/900/450/?blur);
+  background-size: cover;
+  background-color: #333333;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+
+  to {
+    opacity: 1;
+    top: 1;
+  }
+}
+
+.banner .heading {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  position: relative;
+  animation: appear 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small {
+  font-size: 1.5rem;
+}
