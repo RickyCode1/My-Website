@@ -272,6 +272,50 @@ h3.title {
   grid-row: 3/4;
 }
 
+/* Contact  */
+.container {
+  display: flex;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.container form {
+  flex: 1;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  height: 50px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container .map {
+  flex: 1;
+  padding: 12px;
+  margin-left: 20px;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -313,5 +357,13 @@ h3.title {
   nav ul li {
     padding: 11px 0;
     margin: 3px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container map {
+    margin-left: 0;
   }
 }
